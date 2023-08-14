@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cunuw5pg6ym37"]
+
+[ext_resource type="PackedScene" uid="uid://bdjjhny7h0pln" path="res://Cube.tscn" id="1_ydgu0"]
+[ext_resource type="PackedScene" uid="uid://wqfo1bxn65gf" path="res://Ground.tscn" id="1_ytji0"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.735707, 0.6773, 0, -0.6773, 0.735707, 2.98023e-08, 0.405009, 0.412449)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.668365, 0.188754, -0.719486, 0.743833, -0.169603, 0.646488, 0, -0.967268, -0.253758, -3.81414, 3.13848, 0)
+
+[node name="Ground1" parent="." instance=ExtResource("1_ytji0")]
+
+[node name="Cube1" parent="." instance=ExtResource("1_ydgu0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.82479, 0)
+
+[node name="Cube2" parent="." instance=ExtResource("1_ydgu0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.10015, 0)
+
+[node name="Cube3" parent="." instance=ExtResource("1_ydgu0")]
+transform = Transform3D(0.911101, 0, 0.412182, 0, 1, 0, -0.412182, 0, 0.911101, 0, 1.95099, -0.0428423)
+
+[node name="Cube4" parent="." instance=ExtResource("1_ydgu0")]
+transform = Transform3D(0.911101, 0, 0.412182, 0, 1, 0, -0.412182, 0, 0.911101, 0, 2.22635, -0.0428423)
